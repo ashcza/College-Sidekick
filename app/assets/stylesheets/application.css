@@ -109,6 +109,12 @@ a {
 .bgpic {
   width: 100%;
 }
+.vspic {
+  width:95%;
+  padding: 2.5%;
+  height: 95%;
+
+}
 .image {
    position: relative;
    width: 100%; /* for IE 6 */
@@ -137,18 +143,23 @@ h2 span {
   /*opacity: .9;*/
 }
 .second {
+  background-color: #ffffff;
+  width: 100%;
+
+}
+.third {
   background-color: #F24C4E;
   height: 50vw;
   /*opacity: .5;*/
 }
-.third {
+.fourth {
   background-color: #1FB58F;
   height: 50vw;
 }
-.fourth {
+.fifth {
   background-color: #EAB126;
 }
-.fifth {
+.sixth {
   background-color: #DCC7AA;
 }
 
