@@ -1,0 +1,2 @@
+module SidekicksHelper
+end

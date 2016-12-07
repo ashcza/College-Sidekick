@@ -1,15 +1,161 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+body {
+  background-image: url(http://res.cloudinary.com/ashcon/image/upload/v1479184631/college_sidekick/sayagata-400px.png);
+  line-height: 1;
+  margin: 0;
+  height: 100%;
+  /*background: #f0f7f5;
+  background-size: 550px 550px;*/
+  font-family: 'Roboto', sans-serif;
+  color: #777f81;
+}
+
+.marketing-logo {
+    background: url(http://res.cloudinary.com/ashcon/image/upload/v1479192565/college_sidekick/Logo.png) no-repeat;
+    margin-right: 40px;
+    /*width: 184px;
+    height: 42px;*/
+    /*text-indent: -9999px;*/
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.marketing-navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+
+}
+
+.top-link {
+  font-family: 'Roboto', sans-serif;
+  color: #CD5360;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.container {
+  position: relative;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 73%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  /*height: 450px;*/
+}
+
+.content-container {
+  position: relative;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 70%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  height: 250px;
+}
+
+.inner-content {
+  position: relative;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 85%;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.marketing-text {
+  font-size: 2.7vw;
+  padding-bottom: 5%;
+}
+
+.split-text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.split-picture-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.content-title {
+  text-align: center;
+  color: white;
+  font-size: 5vw;
+  margin-bottom: 20px;
+}
+
+.logo {
+  height: 100px;
+}
+
+
+.bgpic {
+  width: 100%;
+}
+.image {
+   position: relative;
+   width: 100%; /* for IE 6 */
+}
+
+h2 {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    font-size: 3.8vw;
+}
+
+h2 span {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: -1px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    letter-spacing: 2.5px;
+}
+
+.first {
+  background-color: #1B7B34;
+  /*opacity: .9;*/
+}
+.second {
+  background-color: #F24C4E;
+  /*opacity: .5;*/
+}
+.third {
+  background-color: #1FB58F;
+}
+.fourth {
+  background-color: #EAB126;
+}
+.fifth {
+  background-color: #DCC7AA;
+}
+
+d {
+  color: white;
+  display: flex;
+}
+
+.body-third {
+  display: flex;
+  color: white;
+}

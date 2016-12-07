@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <title>College Sidekick</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <div class="container">
+    <header class="marketing-header">
+      <img class="logo" src="http://res.cloudinary.com/ashcon/image/upload/v1479192565/college_sidekick/Logo.png"/>
+      <ul class="marketing-navigation">
+        <li class="menu-item">
+          <a class="top-link" href="">About</a>
+        </li>
+        <li class="menu-item">
+          <a class="top-link" href="">Tour</a>
+        </li>
+        <li class="menu-item">
+          <a class="top-link" href="">Join</a>
+        </li>
+      </ul>
+    </header>
+
+  </div>
+
+  <div class="image">
+    <img class="bgpic" src="http://res.cloudinary.com/ashcon/image/upload/v1481051426/college_sidekick/s60knhjcaao-joshua-earle.jpg"/>
+    <h2><span>College students with honest opinions</span></h2>
+
+  </div>
+  <div class="first">
+    <div class="inner-content">
+      <div class="content-title">What is a Sidekick?</div>
+      <div class="split-text-container">
+        <div class="body-third">
+          <a class="marketing-logo">Picture</a>
+          <div class="marketing-text">An experienced college student giving you personal insights into their school</div class="marketing-text">
+        </div>
+        <div class="body-third">
+          <a class="marketing-logo">Picture</a>
+          <div class="marketing-text">They have eaten at the dining hall, can list their favorite courses, and know what happens on the weekends</div class="marketing-text">
+        </div>
+        <div class="body-third">
+          <a class="marketing-logo">Picture</a>
+          <div class="marketing-text">They are not paid by their school, so there is no pressure to sell you anything</div class="marketing-text">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="second">
+    <div class="inner-content">
+      <div class="content-title">Nearby?</div>
+      <div class="split-picture-container">
+        <a class="marketing-logo">Picture</a>
+        <div class="marketing-text">Take an on campus guided tour with a Sidekick</div class="marketing-text">
+      </div>
+    </div>
+  </div>
+
+  <div class="third">
+    <div class="inner-content">
+      <div class="content-title">Far Away?</div>
+      <div class="split-picture-container">
+        <div class="marketing-text">Video chat a sidekick</div class="marketing-text">
+        <a class="marketing-logo">Picture</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="fourth">
+    <div class="inner-content">
+      <div class="content-title">Request a Sidekick!</div>
+      <form>
+        Colleges/Universities:<br>
+        <textarea ></textarea><br>
+
+        First name:<br>
+        <input type="text" name="firstname"><br>
+
+        Last name:<br>
+        <input type="text" name="lastname"><br>
+
+        Email:<br>
+        <input type="email" name="email"><br>
+
+        Phone Number:<br>
+        <input type="tel" name="phone"><br>
+
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+
+  <div class="fifth">
+    <div class="inner-content">
+      <div class="content-title">Apply to be a Sidekick!</div>
+      <form>
+        College/University Name:<br>
+        <input type="text" name="college"><br>
+        Your status for 2015/2016:<br>
+        <select>
+          <option value="Freshman">Freshman</option>
+          <option value="Sophomore">Sophomore</option>
+          <option value="Junior">Junior</option>
+          <option value="Senior">Senior</option>
+        </select><br>
+        Major:<br>
+        <input type="text" name="major"><br>
+        First name:<br>
+        <input type="text" name="firstname"><br>
+        Last name:<br>
+        <input type="text" name="lastname"><br>
+        Email:<br>
+        <input type="email" name="email"><br>
+        Phone Number:<br>
+        <input type="tel" name="phone"><br>
+
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
