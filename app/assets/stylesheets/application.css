@@ -150,11 +150,17 @@ h2 span {
 .third {
   background-color: #F24C4E;
   height: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   /*opacity: .5;*/
 }
 .fourth {
   background-color: #1FB58F;
   height: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .fifth {
   background-color: #EAB126;
@@ -165,7 +171,6 @@ h2 span {
 
 div {
   color: white;
-  /*display: flex;*/
 }
 
 .body-third {
