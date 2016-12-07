@@ -138,10 +138,12 @@ h2 span {
 }
 .second {
   background-color: #F24C4E;
+  height: 50vw;
   /*opacity: .5;*/
 }
 .third {
   background-color: #1FB58F;
+  height: 50vw;
 }
 .fourth {
   background-color: #EAB126;
@@ -150,9 +152,9 @@ h2 span {
   background-color: #DCC7AA;
 }
 
-d {
+div {
   color: white;
-  display: flex;
+  /*display: flex;*/
 }
 
 .body-third {
