@@ -2,6 +2,7 @@
 <html>
 <head>
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.0/build/pure-min.css">
   <title>College Sidekick</title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
@@ -59,20 +60,20 @@
 
   <div class="third">
     <div class="inner-content, mid">
-      <div class="content-title">Nearby?</div>
+      <div class="content-title-large">Nearby?</div>
       <div class="split-picture-container">
-        <a class="marketing-logo">Picture</a>
-        <div class="marketing-text">Take an on campus guided tour with a Sidekick</div class="marketing-text">
+        <div class="marketing-text-large">Take an on campus guided tour with a Sidekick</div class="marketing-text">
+        <div class="marketing-text">$30 /hr</div class="marketing-text">
       </div>
     </div>
   </div>
 
   <div class="fourth">
     <div class="inner-content, mid">
-      <div class="content-title">Far Away?</div>
+      <div class="content-title-large">Far Away?</div>
       <div class="split-picture-container">
-        <div class="marketing-text">Video chat a sidekick</div class="marketing-text">
-        <a class="marketing-logo">Picture</a>
+        <div class="marketing-text-large">Video chat a sidekick</div class="marketing-text">
+          <div class="marketing-text">$25 /hr</div class="marketing-text">
       </div>
     </div>
   </div>
@@ -81,8 +82,8 @@
     <div class="inner-content">
       <div class="content-title">Request a Sidekick!</div>
       <div class="center-form">
-        <form>
-          Colleges/Universities:<br>
+        <form class="pure-form pure-form-stacked">
+          Colleges/Universities of Interest:<br>
           <textarea ></textarea><br>
 
           First name:<br>
@@ -99,7 +100,7 @@
 
           <input type="submit" value="Submit">
         </form>
-        <a class="marketing-logo">Picture</a>
+        <!-- <a class="marketing-logo">Picture</a> -->
       </div>
     </div>
   </div>
@@ -108,7 +109,7 @@
     <div class="inner-content">
       <div class="content-title">Apply to be a Sidekick!</div>
       <div class="center-form">
-        <form>
+        <form class="pure-form pure-form-stacked">
           College/University Name:<br>
           <input type="text" name="college"><br>
           Your status for 2015/2016:<br>
@@ -130,7 +131,7 @@
           <input type="tel" name="phone"><br>
           <input type="submit" value="Submit">
         </form>
-        <a class="marketing-logo">Picture</a>
+        <!-- <a class="marketing-logo">Picture</a> -->
       </div>
     </div>
   </div>

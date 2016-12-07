@@ -82,6 +82,10 @@ a {
   font-size: 2.7vw;
   padding-bottom: 5%;
 }
+.marketing-text-large {
+  font-size: 3.5vw;
+  padding-bottom: 5%;
+}
 
 .split-text-container {
   display: flex;
@@ -91,13 +95,22 @@ a {
 
 .split-picture-container {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
+  align-items: center;
+
 }
 
 .content-title {
   text-align: center;
   color: white;
-  font-size: 5vw;
+  font-size: 8vw;
+  margin-bottom: 20px;
+}
+.content-title-large {
+  text-align: center;
+  color: white;
+  font-size: 11vw;
   margin-bottom: 20px;
 }
 
@@ -188,23 +201,13 @@ div {
   justify-content: space-around;
 }
 
-/*select {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-	background-image: url(images/select-bg.svg);
-	background-repeat: no-repeat;
-	background-position: right 10px center;
-	-webkit-background-size: 14px 12px;
-	background-size: 14px 12px;
-}*/
+input {
+  width: 300px;
+}
 
-
-
-
-
-
-
+textarea {
+  height: 100px;
+}
 
 
 
