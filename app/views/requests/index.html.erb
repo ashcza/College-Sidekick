@@ -93,6 +93,7 @@
       <div class="inner-content">
         <div class="content-title">Request a Sidekick!</div>
         <div><%= (@request.errors.full_messages.first if @request.errors.any?) if @request %></div>
+
         <div class="center-form">
 
           <form class="pure-form pure-form-stacked" action="/requests" method="post">

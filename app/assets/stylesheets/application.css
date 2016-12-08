@@ -246,6 +246,13 @@ form {
   margin-bottom: 2vw;
 }
 
+input {
+  width: 146px;
+  border-radius: 5px;
+  /*background-color: purple;*/
+}
+
+
 
 
 
@@ -370,4 +377,10 @@ textarea::placeholder {
 	color: #c7c7c7;
 	opacity: 1;
 	font-weight: 400;
+}
+
+#submit-form {
+  background-color: red;
+  background-color: rgba(76,175,80,1);
+  text-align: center;
 }

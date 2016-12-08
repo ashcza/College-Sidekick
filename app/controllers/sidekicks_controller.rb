@@ -7,10 +7,14 @@ class SidekicksController < ApplicationController
   def create
     @sidekick = Sidekick.new(sidekick_params)
 
-    if @sidekick.save!
+    if @sidekick.save
       render :show
+    else
+      flash.now[:errors] = @sidekick.errors.full_messages
+      @section = "join"
+      render :index
     end
-    
+
   end
 
   def show

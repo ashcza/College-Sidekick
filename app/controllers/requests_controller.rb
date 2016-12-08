@@ -2,9 +2,13 @@ class RequestsController < ApplicationController
 
   def create
     @request = Request.new(request_params)
-    
-    if @request.save!
+
+    if @request.save
       render :show
+    else
+      flash.now[:errors] = @request.errors.full_messages
+      @section = "tour"
+      render :index
     end
 
   end
