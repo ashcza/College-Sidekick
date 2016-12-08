@@ -92,7 +92,7 @@
     <div class="fifth">
       <div class="inner-content">
         <div class="content-title">Request a Sidekick!</div>
-        <div><%= (@request.errors.full_messages.first if @request.errors.any?) if @request %></div>
+        <div class="error"><%= (@request.errors.full_messages.first if @request.errors.any?) if @request %></div>
         <div class="center-form">
 
           <form class="pure-form pure-form-stacked" action="/requests" method="post">
@@ -124,7 +124,7 @@
     <div class="sixth">
       <div class="inner-content">
         <div class="content-title">Apply to be a Sidekick!</div>
-        <div><%= (@sidekick.errors.full_messages.first if @sidekick.errors.any?) if @sidekick %></div>
+        <div class="error"><%= (@sidekick.errors.full_messages.first if @sidekick.errors.any?) if @sidekick %></div>
         <div class="center-form">
           <form class="pure-form pure-form-stacked" action="/sidekicks" method="post">
             <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
