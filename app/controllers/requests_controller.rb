@@ -1,7 +1,12 @@
 class RequestsController < ApplicationController
 
   def create
+    @request = Request.new(request_params)
     
+    if @request.save!
+      render :show
+    end
+
   end
 
   private

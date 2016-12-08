@@ -12,9 +12,6 @@ body {
 .marketing-logo {
     background: url(http://res.cloudinary.com/ashcon/image/upload/v1479192565/college_sidekick/Logo.png) no-repeat;
     margin-right: 40px;
-    /*width: 184px;
-    height: 42px;*/
-    /*text-indent: -9999px;*/
 }
 
 header {
@@ -84,6 +81,12 @@ a {
 .marketing-text-large {
   font-size: 3.5vw;
   padding-bottom: 5%;
+}
+.marketing-text-confirm {
+  font-size: 3.5vw;
+  padding-bottom: 5%;
+  text-align: center;
+  width: 85%;
 }
 
 .split-text-container {
@@ -237,7 +240,11 @@ input.button:hover {
   color: #09C;
 }
 
-
+form {
+  width: 300px;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
 
 
 
