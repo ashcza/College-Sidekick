@@ -86,10 +86,11 @@
         <div class="content-title">Request a Sidekick!</div>
         <div class="center-form">
 
-          <form class="pure-form pure-form-stacked" action="/sidekicks" method="post">
+          <form class="pure-form pure-form-stacked" action="/requests" method="post">
+            <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
 
             Colleges/Universities of Interest:<br>
-            <textarea ></textarea><br>
+            <textarea name="request[colleges]"></textarea><br>
 
             First name:<br>
             <input type="text" name="request[first]"><br>
@@ -116,7 +117,8 @@
       <div class="inner-content">
         <div class="content-title">Apply to be a Sidekick!</div>
         <div class="center-form">
-          <form class="pure-form pure-form-stacked">
+          <form class="pure-form pure-form-stacked" action="/sidekicks" method="post">
+            <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
             College/University Name:<br>
             <input type="text" name="sidekick[college]"><br>
             Your status for 2015/2016:<br>
