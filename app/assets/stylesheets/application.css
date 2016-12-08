@@ -62,10 +62,9 @@ header {
 
 .inner-content {
   position: relative;
-  max-width: 960px;
+  max-width: 80%;
   margin: 0 auto;
   padding: 0 20px;
-  width: 85%;
   padding-top: 20px;
   padding-bottom: 30px;
 }
@@ -105,7 +104,7 @@ a {
   text-align: center;
   color: white;
   font-size: 8vw;
-  margin-bottom: 20px;
+  margin-bottom: 2vw;
 }
 .content-title-large {
   text-align: center;
@@ -126,7 +125,12 @@ a {
   width:95%;
   padding: 2.5%;
   height: 95%;
+}
 
+.icon {
+  width: 6vw;
+  height: 5%;
+  padding-right: 2vw;
 }
 .image {
    position: relative;
@@ -173,10 +177,10 @@ h2 span {
   justify-content: center;
 }
 .fifth {
-  background-color: #EAB126;
+  background-color: #dea824;
 }
 .sixth {
-  background-color: #DCC7AA;
+  background-color: #b5a389;
 }
 
 div {
@@ -209,9 +213,29 @@ textarea {
   height: 100px;
 }
 
+.submit-button {
+  width: 10px;
+}
 
 
 
+button {
+  width: 100px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background: #09C;
+  color: #fff;
+  font-family: Tahoma, Geneva, sans-serif;
+  height: 30px;
+  border-radius: 15px;
+  border: 1p solid #999;
+}
+
+input.button:hover {
+  background: #fff;
+  color: #09C;
+}
 
 
 
