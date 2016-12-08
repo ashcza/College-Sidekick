@@ -156,7 +156,7 @@ h2 span {
 }
 
 .first {
-  background-color: #1B7B34;
+  background-color: rgba(21, 29, 10, 0.56);
   /*opacity: .9;*/
 }
 .second {

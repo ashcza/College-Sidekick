@@ -85,24 +85,27 @@
       <div class="inner-content">
         <div class="content-title">Request a Sidekick!</div>
         <div class="center-form">
-          <form class="pure-form pure-form-stacked">
+
+          <form class="pure-form pure-form-stacked" action="/sidekicks" method="post">
+
             Colleges/Universities of Interest:<br>
             <textarea ></textarea><br>
 
             First name:<br>
-            <input type="text" name="firstname"><br>
+            <input type="text" name="request[first]"><br>
 
             Last name:<br>
-            <input type="text" name="lastname"><br>
+            <input type="text" name="request[last]"><br>
 
             Email:<br>
-            <input type="email" name="email"><br>
+            <input type="email" name="request[email]"><br>
 
             Phone Number:<br>
-            <input type="tel" name="phone"><br>
+            <input type="tel" name="request[phone]"><br>
 
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit Request">
           </form>
+
         </div>
       </div>
     </div>
@@ -115,24 +118,25 @@
         <div class="center-form">
           <form class="pure-form pure-form-stacked">
             College/University Name:<br>
-            <input type="text" name="college"><br>
+            <input type="text" name="sidekick[college]"><br>
             Your status for 2015/2016:<br>
-            <select>
+            <select name="sidekick[year]">
+              <option disabled selected>-- Select Year --</option>
               <option value="Freshman">Freshman</option>
               <option value="Sophomore">Sophomore</option>
               <option value="Junior">Junior</option>
               <option value="Senior">Senior</option>
             </select><br>
             Major:<br>
-            <input type="text" name="major"><br>
+            <input type="text" name="sidekick[major]"><br>
             First name:<br>
-            <input type="text" name="firstname"><br>
+            <input type="text" name="sidekick[first]"><br>
             Last name:<br>
-            <input type="text" name="lastname"><br>
+            <input type="text" name="sidekick[last]"><br>
             Email:<br>
-            <input type="email" name="email"><br>
+            <input type="email" name="sidekick[email]"><br>
             Phone Number:<br>
-            <input type="tel" name="phone"><br>
+            <input type="tel" name="sidekick[phone]"><br>
             <input type="submit" value="Submit">
           </form>
         </div>
