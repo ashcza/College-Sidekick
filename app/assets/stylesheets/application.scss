@@ -326,7 +326,18 @@ input {
   background-size: cover;
 }
 
+#submit-form {
+  background-color: red;
+  background-color: rgba(76,175,80,1);
+  text-align: center;
+  border-color: transparent;
+  height: 40px;
+}
 
+
+
+
+// ---------------------------------------------- Mobile
 
 @media only screen and (max-device-width: 700px) {
   .marketing-header {
@@ -334,7 +345,81 @@ input {
     flex-direction: column;
   }
   .logo {
-    height: 15vw;
+    height: 24vw;
+    padding-top: 4vw;
+  }
+
+  .marketing-navigation {
+    padding-top: 10%;
+    padding-left: 0px;
+    width: 100%;
+  }
+
+  .top-link {
+    font-size: 68px;
+  }
+
+  .first-section {
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  h2 span {
+    font-size: 4vw;
+  }
+
+  h2 {
+    top: 33vh;
+  }
+
+  .marketing-text  {
+    font-size: 4.7vw;
+    padding-left: 20px;
+  }
+
+  .body-third {
+    align-items: center;
+  }
+
+  .icon {
+    width: 10vw;
+  }
+  .inner-content {
+    max-width: 80%;
+  }
+
+  .marketing-text-large {
+    font-size: 59px;
+    text-align: center;
+    width: 90%;
+    line-height: 83px;
+  }
+  .content-title-large {
+    font-size: 13vw;
+  }
+  .pure-form {
+    width: 90vw;
+    font-size: 5vw;
+  }
+
+  .form-style {
+    height: 13vw;
+  }
+
+  #submit-form {
+    height: 6vh;
+    width: 43vw;
+  }
+
+  .vspic {
+    width: 95%;
+  }
+  .sixth {
+    height: 111vh;
+  }
+
+  .pure-form select {
+    height: 8.25em;
   }
 }
 
@@ -457,12 +542,4 @@ textarea::placeholder {
 	color: #c7c7c7;
 	opacity: 1;
 	font-weight: 400;
-}
-
-#submit-form {
-  background-color: red;
-  background-color: rgba(76,175,80,1);
-  text-align: center;
-  border-color: transparent;
-  height: 40px;
 }

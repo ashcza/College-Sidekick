@@ -104,19 +104,19 @@
             <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
 
             Colleges/Universities of Interest:<br>
-            <textarea name="request[colleges]"></textarea><br>
+            <textarea name="request[colleges]" class="form-style"></textarea><br>
 
             First name:<br>
-            <input type="text" name="request[first]"><br>
+            <input type="text" name="request[first]" class="form-style"><br>
 
             Last name:<br>
-            <input type="text" name="request[last]"><br>
+            <input type="text" name="request[last]" class="form-style"><br>
 
             Email:<br>
-            <input type="email" name="request[email]"><br>
+            <input type="email" name="request[email]" class="form-style"><br>
 
             Phone Number:<br>
-            <input type="tel" name="request[phone]"><br>
+            <input type="tel" name="request[phone]" class="form-style"><br>
             <input type="submit" value="Submit Request" id="submit-form">
           </form>
 
@@ -134,9 +134,9 @@
           <form class="pure-form pure-form-stacked" action="/sidekicks" method="post">
             <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
             College/University Name:<br>
-            <input type="text" name="sidekick[college]"><br>
+            <input type="text" name="sidekick[college]" class="form-style"><br>
             Your status for 2015/2016:<br>
-            <select name="sidekick[year]">
+            <select name="sidekick[year]" class="form-style">
               <option disabled selected>-- Select Year --</option>
               <option value="Freshman">Freshman</option>
               <option value="Sophomore">Sophomore</option>
@@ -144,15 +144,15 @@
               <option value="Senior">Senior</option>
             </select><br>
             Major:<br>
-            <input type="text" name="sidekick[major]"><br>
+            <input type="text" name="sidekick[major]" class="form-style"><br>
             First name:<br>
-            <input type="text" name="sidekick[first]"><br>
+            <input type="text" name="sidekick[first]" class="form-style"><br>
             Last name:<br>
-            <input type="text" name="sidekick[last]"><br>
+            <input type="text" name="sidekick[last]" class="form-style"><br>
             Email:<br>
-            <input type="email" name="sidekick[email]"><br>
+            <input type="email" name="sidekick[email]" class="form-style"><br>
             Phone Number:<br>
-            <input type="tel" name="sidekick[phone]"><br>
+            <input type="tel" name="sidekick[phone]" class="form-style"><br>
             <input type="submit" value="Send Application" id="submit-form">
           </form>
         </div>
