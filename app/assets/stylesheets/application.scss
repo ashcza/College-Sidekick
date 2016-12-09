@@ -343,6 +343,7 @@ input {
   .marketing-header {
     display: flex;
     flex-direction: column;
+    width: 85%;
   }
   .logo {
     height: 12vw;
@@ -366,6 +367,7 @@ input {
 
   h2 span {
     font-size: 3.5vw;
+    letter-spacing: 3px;
   }
 
   h2 {
@@ -385,7 +387,7 @@ input {
     width: 10vw;
   }
   .inner-content {
-    max-width: 80%;
+    max-width: 95%;
   }
 
   .marketing-text-large {
