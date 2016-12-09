@@ -140,7 +140,7 @@ a {
   font-size: 8vw;
   margin-bottom: 30px;
   }
-  
+
 .content-title-large {
   @include responsive-font(8vw, 35px, 100px);
   text-align: center;
@@ -434,4 +434,5 @@ textarea::placeholder {
   background-color: red;
   background-color: rgba(76,175,80,1);
   text-align: center;
+  border-color: transparent;
 }
