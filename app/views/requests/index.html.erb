@@ -19,8 +19,10 @@
   <% end %>
 
   <div class="first-section">
-    <img class="bgpic" src="http://res.cloudinary.com/ashcon/image/upload/v1481051426/college_sidekick/s60knhjcaao-joshua-earle.jpg"/>
-
+    <!-- <img class="bgpic" src="http://res.cloudinary.com/ashcon/image/upload/v1481051426/college_sidekick/s60knhjcaao-joshua-earle.jpg"/> -->
+    <div class="image">
+      <!-- <h2><span>College students with honest opinions</span></h2> -->
+    </div>
     <div class="container">
       <header class="marketing-header">
         <img class="logo" src="http://res.cloudinary.com/ashcon/image/upload/v1479192565/college_sidekick/Logo.png"/>
@@ -39,6 +41,7 @@
     </div>
 
     <div class="image">
+      <!-- <img class="bgpic" src="http://res.cloudinary.com/ashcon/image/upload/v1481051426/college_sidekick/s60knhjcaao-joshua-earle.jpg"/> -->
       <h2><span>College students with honest opinions</span></h2>
     </div>
   </div>
@@ -94,7 +97,7 @@
     <div class="fifth">
       <div class="inner-content">
         <div class="content-title">Request a Sidekick!</div>
-        <div class="error"><%= (@request.errors.full_messages.first if @request.errors.any?) if @request %></div>
+          <div class="error"><%= (@request.errors.full_messages.first if @request.errors.any?) if @request %></div>
         <div class="center-form">
 
           <form class="pure-form pure-form-stacked" action="/requests" method="post">
