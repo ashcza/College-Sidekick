@@ -8,9 +8,9 @@ class RequestsController < ApplicationController
 
       # Define your message parameters
       message_params =  { from: 'postmaster@sandbox2de06e30b747423fb5cfdce1c4366c48.mailgun.org',
-                          to:   'ashcon.zand@gmail.com',
-                          subject: 'The Ruby SDK is awesome!',
-                          text:    'It is really easy to send a message!'
+                          to:   'college.sidekick@gmail.com',
+                          subject: "Request - #{sidekick_params[colleges]}",
+                          text:    "First: #{request_params[first]}\nLast: #{request_params[last]}\nEmail: #{request_params[email]}\nPhone: #{request_params[phone]}\nLast: #{request_params[colleges]}\n"
                         }
 
       # Send your message through the client
