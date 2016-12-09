@@ -1,3 +1,28 @@
+@mixin responsive-font($responsive, $min, $max: false, $fallback: false) {
+  $responsive-unitless: $responsive / ($responsive - $responsive + 1);
+  $dimension: if(unit($responsive) == 'vh', 'height', 'width');
+  $min-breakpoint: $min / $responsive-unitless * 100;
+
+  @media (max-#{$dimension}: #{$min-breakpoint}) {
+    font-size: $min;
+  }
+
+  @if $max {
+    $max-breakpoint: $max / $responsive-unitless * 100;
+
+    @media (min-#{$dimension}: #{$max-breakpoint}) {
+      font-size: $max;
+    }
+  }
+
+  @if $fallback {
+    font-size: $fallback;
+  }
+
+  font-size: $responsive;
+}
+
+
 body {
   background-image: url(http://res.cloudinary.com/ashcon/image/upload/v1479184631/college_sidekick/sayagata-400px.png);
   line-height: 1;
@@ -83,7 +108,7 @@ a {
   padding-bottom: 5%;
 }
 .marketing-text-large {
-  font-size: 3.5vw;
+  @include responsive-font(5vw, 25px, 35px);
   padding-bottom: 5%;
 }
 .marketing-text-confirm {
@@ -108,12 +133,16 @@ a {
 }
 
 .content-title {
+  @include responsive-font(8vw, 35px, 80px);
+
   text-align: center;
   color: white;
   font-size: 8vw;
-  margin-bottom: 2vw;
-}
+  margin-bottom: 30px;
+  }
+  
 .content-title-large {
+  @include responsive-font(8vw, 35px, 100px);
   text-align: center;
   color: white;
   font-size: 11vw;
@@ -129,9 +158,10 @@ a {
   width: 100%;
 }
 .vspic {
-  width:95%;
-  padding: 2.5%;
-  height: 95%;
+  width: 100%;
+  max-width: 1000px;
+  padding: 2vw;
+  height: 100%;
 }
 
 .icon {
@@ -164,30 +194,39 @@ h2 span {
 
 .first {
   background-color: rgba(21, 29, 10, 0.56);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
   /*opacity: .9;*/
 }
 .second {
   background-color: #ffffff;
   width: 100%;
-
+  display: flex;
+  justify-content: center;
 }
 .third {
   background-color: #F24C4E;
-  height: 50vw;
-  /*opacity: .5;*/
+  height: 100vh;  /*opacity: .5;*/
 }
 .fourth {
   background-color: #1FB58F;
-  height: 50vw;
-  display: flex;
+  height: 100vh;  display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .fifth {
   background-color: #dea824;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 .sixth {
   background-color: #b5a389;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 div {
