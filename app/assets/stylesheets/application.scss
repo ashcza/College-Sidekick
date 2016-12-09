@@ -365,7 +365,7 @@ input {
   }
 
   h2 span {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
 
   h2 {
@@ -408,8 +408,10 @@ input {
 
   #submit-form {
     height: 6vh;
-    width: 43vw;
+    width: 47vw;
     text-align: center;
+    padding: 0px;
+    margin: 0px;
   }
 
   .vspic {
