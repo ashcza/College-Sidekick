@@ -346,8 +346,8 @@ input {
   }
   .logo {
     height: 12vw;
-    padding-top: 4vw;
-  }
+    padding-top: 0vw;
+    }
 
   .marketing-navigation {
     padding-top: 5%;
@@ -365,7 +365,7 @@ input {
   }
 
   h2 span {
-    font-size: 3.7vw;
+    font-size: 3vw;
   }
 
   h2 {
@@ -409,6 +409,7 @@ input {
   #submit-form {
     height: 6vh;
     width: 43vw;
+    text-align: center;
   }
 
   .vspic {
