@@ -345,18 +345,18 @@ input {
     flex-direction: column;
   }
   .logo {
-    height: 24vw;
+    height: 12vw;
     padding-top: 4vw;
   }
 
   .marketing-navigation {
-    padding-top: 10%;
+    padding-top: 5%;
     padding-left: 0px;
     width: 100%;
   }
 
   .top-link {
-    font-size: 68px;
+    @include responsive-font(3vw, 25px, 30px);
   }
 
   .first-section {
@@ -365,7 +365,7 @@ input {
   }
 
   h2 span {
-    font-size: 4vw;
+    font-size: 3.7vw;
   }
 
   h2 {
@@ -389,10 +389,10 @@ input {
   }
 
   .marketing-text-large {
-    font-size: 59px;
+    font-size: 27px;
     text-align: center;
     width: 90%;
-    line-height: 83px;
+    line-height: 40px;
   }
   .content-title-large {
     font-size: 13vw;
@@ -420,6 +420,9 @@ input {
 
   .pure-form select {
     height: 8.25em;
+  }
+  .first {
+    min-height: 450px;
   }
 }
 
