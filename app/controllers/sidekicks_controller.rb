@@ -12,7 +12,7 @@ class SidekicksController < ApplicationController
 
       # Define your message parameters
       message_params =  { from: 'postmaster@sandbox2de06e30b747423fb5cfdce1c4366c48.mailgun.org',
-                          to:   'collegesidekick@gmail.com',
+                          to:   'college.sidekick@gmail.com',
                           subject: "Sidekick Registration - #{sidekick_params["college"]}",
                           text:    "First: #{sidekick_params["first"]}\nLast: #{sidekick_params["last"]}\nCollege: #{sidekick_params["college"]}\nMajor: #{sidekick_params["major"]}\nYear: #{sidekick_params["year"]}\nEmail: #{sidekick_params["email"]}\nPhone: #{sidekick_params["phone"]}"
                         }
