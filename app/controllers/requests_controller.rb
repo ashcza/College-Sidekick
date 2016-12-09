@@ -5,12 +5,11 @@ class RequestsController < ApplicationController
     @request = Request.new(request_params)
     if @request.save
       mg_client = Mailgun::Client.new 'key-3ff187b49a46c6f9ba3abdabcc7e1e85'
-
       # Define your message parameters
       message_params =  { from: 'postmaster@sandbox2de06e30b747423fb5cfdce1c4366c48.mailgun.org',
-                          to:   'college.sidekick@gmail.com',
-                          subject: "Request - #{sidekick_params[colleges]}",
-                          text:    "First: #{request_params[first]}\nLast: #{request_params[last]}\nEmail: #{request_params[email]}\nPhone: #{request_params[phone]}\nLast: #{request_params[colleges]}\n"
+                          to:   'collegesidekick@gmail.com',
+                          subject: "Request - #{request_params["colleges"]}",
+                          text:    "First: #{request_params["first"]}\nLast: #{request_params["last"]}\nEmail: #{request_params["email"]}\nPhone: #{request_params["phone"]}\nColleges: #{request_params["colleges"]}\n"
                         }
 
       # Send your message through the client
