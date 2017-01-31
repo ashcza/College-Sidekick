@@ -9,7 +9,7 @@ class RequestsController < ApplicationController
       message_params =  { from: 'postmaster@sandbox2de06e30b747423fb5cfdce1c4366c48.mailgun.org',
                           to:   'contact@collegesidekick.com',
                           subject: "Request - #{request_params["colleges"]}",
-                          text:    "First: #{request_params["first"]}\nLast: #{request_params["last"]}\nEmail: #{request_params["email"]}\nPhone: #{request_params["phone"]}\nColleges: #{request_params["colleges"]}\n"
+                          text:    "First: #{request_params["first"]}\nLast: #{request_params["last"]}\nHigh School: #{request_params["high_school"]}\nEmail: #{request_params["email"]}\nPhone: #{request_params["phone"]}\nColleges: #{request_params["colleges"]}\n"
                         }
 
       # Send your message through the client
@@ -27,7 +27,7 @@ class RequestsController < ApplicationController
 
   private
   def request_params
-    params.require(:request).permit(:first, :last, :email, :phone, :colleges)
+    params.require(:request).permit(:first, :last, :email, :phone, :colleges, :high_school)
   end
 
 end
