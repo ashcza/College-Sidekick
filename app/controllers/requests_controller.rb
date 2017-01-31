@@ -2,6 +2,7 @@
 class RequestsController < ApplicationController
 
   def create
+
     @request = Request.new(request_params)
     if @request.save
       mg_client = Mailgun::Client.new 'key-3ff187b49a46c6f9ba3abdabcc7e1e85'
